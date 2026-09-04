@@ -1,0 +1,277 @@
+generated: '2026-09-04'
+method: probed
+source: live probes of the named /.well-known path list plus /apis.json and /apis.yml on every host in
+  apis.yml
+hosts:
+- host: https://wedoctor.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/wedoctor-negative-control-7f3ab91c.json
+    status: 404
+    bytes: 104033
+  note: Host serves genuine 404s (control path 404s); every probed path is a real absence.
+- host: https://www.wedoctor.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /apis.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/wedoctor-negative-control-7f3ab91c.json
+    status: 200
+    bytes: 987
+  note: Tencent EdgeOne bot-mitigation edge answers HTTP 200 with an identical ~986-byte JavaScript cookie-challenge
+    shell for EVERY path, including a control path that cannot exist. No path on this host returned a
+    document; all 200s here are false positives.
+- host: https://guahao.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /apis.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/wedoctor-negative-control-7f3ab91c.json
+    status: 200
+    bytes: 986
+  note: Tencent EdgeOne bot-mitigation edge answers HTTP 200 with an identical ~986-byte JavaScript cookie-challenge
+    shell for EVERY path, including a control path that cannot exist. No path on this host returned a
+    document; all 200s here are false positives.
+- host: https://www.guahao.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/ucp.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/acp.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /apis.json
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: catch-all 200 (bot-challenge shell), not a document
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/wedoctor-negative-control-7f3ab91c.json
+    status: 200
+    bytes: 986
+  note: Tencent EdgeOne bot-mitigation edge answers HTTP 200 with an identical ~986-byte JavaScript cookie-challenge
+    shell for EVERY path, including a control path that cannot exist. No path on this host returned a
+    document; all 200s here are false positives.
+- host: https://api.guahao.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/wedoctor-negative-control-7f3ab91c.json
+    status: 404
+    bytes: 580
+  note: Host serves genuine 404s (control path 404s); every probed path is a real absence.
+x-finding: 'No /.well-known document, apis.json or apis.yml is served on any WeDoctor host. wedoctor.com
+  and api.guahao.com return genuine 404s across the whole list. www.wedoctor.com, guahao.com and www.guahao.com
+  sit behind a Tencent EdgeOne bot-mitigation edge whose 200 responses are a JavaScript challenge shell
+  served identically for every path, so their 200s carry no document. NO WellKnown or SecurityTxt pointer
+  is emitted: this artifact records an absence, not a presence.'

@@ -1,0 +1,76 @@
+generated: '2026-09-04'
+method: searched
+source: https://wedoctor.com/contact
+note: >-
+  WeDoctor publishes no machine-readable API contract, so there is no spec from which to
+  derive technical conformance. Every cross-cutting API standard below is therefore recorded
+  as not-conformant on the evidence of absence, not on a failed test. What WeDoctor does
+  publish, prominently and in its own site footer, is the Chinese regulatory filing set
+  required to operate an internet hospital, an online pharmacy and a medical-device
+  marketplace — captured below verbatim because it is the only substantive published
+  compliance posture this company has, and it is real, dated and independently checkable
+  against the issuing registries.
+conformance:
+- id: openapi
+  conforms: false
+  evidence: >-
+    No OpenAPI/Swagger document at /openapi.json, /openapi.yaml, /swagger.json,
+    /v1/openapi.json, /api-docs or /v2/api-docs on wedoctor.com (all HTTP 404) or on
+    api.guahao.com (all HTTP 404).
+- id: graphql
+  conforms: false
+  evidence: 'https://wedoctor.com/graphql — HTTP 404; no GraphQL surface published.'
+- id: oauth2
+  conforms: false
+  evidence: >-
+    https://wedoctor.com/.well-known/oauth-authorization-server — HTTP 404. Consumer sign-in
+    offers third-party social login (WeChat, QQ, Weibo, Taobao, Alipay) as a RELYING PARTY;
+    WeDoctor publishes no authorization server of its own.
+- id: oidc
+  conforms: false
+  evidence: 'https://wedoctor.com/.well-known/openid-configuration — HTTP 404.'
+- id: fhir
+  conforms: false
+  evidence: >-
+    No FHIR endpoint, capability statement or conformance claim found. Chinese internet
+    hospitals commonly integrate over national/provincial health-information platform
+    specifications rather than HL7 FHIR; no such interface is published either.
+- id: rfc9457
+  conforms: false
+  evidence: 'No published error contract; no problem+json surface reachable.'
+regulatory_filings:
+  jurisdiction: CN
+  source: https://wedoctor.com/contact
+  fetched: '2026-09-04'
+  note: >-
+    Transcribed verbatim from the site footer served on every WeDoctor portal page. These are
+    operating licences and platform filings issued by Chinese regulators, NOT security or
+    privacy certifications (no SOC 2, ISO 27001, HIPAA or equivalent is claimed anywhere on
+    the public surface). No `Compliance` pointer is emitted for that reason.
+  filings:
+  - id: icp-filing
+    label: ICP 备案 (MIIT internet content provider filing)
+    number: 浙ICP备19014363号
+    registry: https://beian.miit.gov.cn/
+  - id: public-security-filing
+    label: 公安机关备案 (public security network filing)
+    number: 浙公网安备 33010902000463号
+  - id: value-added-telecom-licence
+    label: 增值电信业务经营许可证 (value-added telecommunications business licence)
+    number: null
+    note: Licence is linked in the footer; the number is not rendered in the page text.
+  - id: class-ii-medical-device-operation
+    label: 第二类医疗器械经营备案凭证 (Class II medical device trading filing)
+    number: 浙杭药监械经营备20193436号
+  - id: medical-device-network-platform
+    label: 医疗器械网络交易服务第三方平台备案 (third-party medical-device marketplace filing)
+    number: (浙)网械平台备字[2021]第00023号
+  - id: drug-network-transaction-platform
+    label: 药品网络交易第三方平台备案 (third-party online pharmacy marketplace filing)
+    number: （浙）网药平台备字〔2023〕第000011-003号
+  - id: internet-drug-information-service
+    label: 互联网药品信息服务备案凭证 (internet drug information service filing)
+    number: 浙网药信备字〔2025〕00228号
+  - id: network-food-third-party-platform
+    label: 网络食品交易第三方平台提供者备案 (third-party online food platform filing)
+    number: 浙网食 A33000086

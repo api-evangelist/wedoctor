@@ -1,10 +1,24 @@
 aid: wedoctor
 name: WeDoctor
-description: 'WeDoctor is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  WeDoctor (微医, formerly Guahao.com / 挂号网) is a Hangzhou-based Chinese digital
+  health platform founded in 2010 by Liao Jieyuan. It began as an online
+  hospital-appointment registration network and grew into a full-stack "Internet +
+  Healthcare" operator spanning online consultation and internet hospitals (it
+  launched China's first, the Wuzhen Internet Hospital, in 2015), e-prescription
+  and pharmacy fulfilment, screening and diagnostics, chronic-disease management,
+  medical insurance settlement, and the WeDoctor Cloud platform sold to hospitals
+  and regional health authorities. The company reports connections to thousands of
+  Chinese hospitals and hundreds of thousands of registered physicians. Its public
+  surface is consumer- and clinician-facing (web portal plus the 微医 patient app and
+  微医生 doctor app); as of this profile it operates no public developer program,
+  publishes no machine-readable API contract, and exposes no documented partner API
+  — hospital and insurer integrations are handled through private commercial
+  agreements rather than a self-serve developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/wedoctor/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
+x-duplicate-of: guahao
 x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.20'
@@ -12,6 +26,14 @@ created: '2026-09-04'
 modified: '2026-09-04'
 tags:
 - Company
+- Healthcare
+- Digital Health
+- Telemedicine
+- Internet Hospital
+- Appointment Booking
+- Electronic Prescription
+- Health Insurance
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +42,51 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.hiive.com/securities/wedoctor-stock
+  url: https://wedoctor.com
+- type: Support
+  url: https://wedoctor.com/contact
+- type: HelpCenter
+  url: https://wedoctor.com/intro/doctorhelp
+- type: SignUp
+  url: https://wedoctor.com/register/mobile
+- type: Login
+  url: https://wedoctor.com/user/login
+- type: TermsOfService
+  url: https://wedoctor.com/agreement/doctor
+- type: PrivacyPolicy
+  url: https://wedoctor.com/agreement/privacy
+- type: DomainSecurity
+  url: security/wedoctor-domain-security.yml
+- type: Conformance
+  url: conformance/wedoctor-conformance.yml
+- type: LLMsTxt
+  url: llms/wedoctor-llms.txt
+x-enrichment:
+  date: '2026-09-04'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    WeDoctor ships only end-user software — the 微医 patient app, the 微医生 clinician app and the
+    wedoctor.com internet-hospital portal — and operates no developer program of any kind: the
+    readable apex host wedoctor.com returns a genuine HTTP 404 for every OpenAPI, GraphQL,
+    llms.txt, agent-card and /.well-known discovery path, and no open.*/developer.*/api.*
+    subdomain exists (the 200s on those names are a *.wedoctor.com wildcard answering a Tencent
+    EdgeOne bot challenge, proven by a negative-control hostname returning the identical body).
+  evidence:
+  - url: https://wedoctor.com/openapi.json
+    status: 404
+  - url: https://wedoctor.com/.well-known/agent-card.json
+    status: 404
+  - url: https://wedoctor.com/llms.txt
+    status: 404
+  - url: https://wedoctor.com/graphql
+    status: 404
+  - url: https://api.guahao.com/openapi.json
+    status: 404
+  - url: https://wedoctor.com/contact
+    status: 200
+  checked: '2026-09-04'
