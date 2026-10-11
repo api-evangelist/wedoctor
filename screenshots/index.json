@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "wedoctor",
+    "captured_at": "2026-10-11T194357",
+    "source_url": "https://wedoctor.com",
+    "source_type": "Website",
+    "file": "wedoctor-2026-10-11T194357.png",
+    "bytes": 309901,
+    "capture": "playwright-local"
+  }
+]
