@@ -64,5 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-WeDoctor is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/wedoctor-stock
+WeDoctor (微医, formerly Guahao.com / 挂号网) is a Hangzhou-based Chinese digital health platform founded in 2010 by Liao Jieyuan. It began as an online hospital-appointment registration network and grew into a full-stack "Internet + Healthcare" operator spanning online consultation and internet hospitals (it launched China's first, the Wuzhen Internet Hospital, in 2015), e-prescription and pharmacy fulfilment, screening and diagnostics, chronic-disease management, medical insurance settlement, and the WeDoctor Cloud platform sold to hospitals and regional health authorities. The company reports connections to thousands of Chinese hospitals and hundreds of thousands of registered physicians. Its public surface is consumer- and clinician-facing (web portal plus the 微医 patient app and 微医生 doctor app); as of this profile it operates no public developer program, publishes no machine-readable API contract, and exposes no documented partner API — hospital and insurer integrations are handled through private commercial agreements rather than a self-serve developer portal.
+
+**Areas:** Company · Healthcare · Digital Health · Telehealth · Internet Hospital · Appointment Booking · Electronic Prescription · Health Insurance · China
+
+## WeDoctor on APIs.io
+
+Everything profiled for WeDoctor is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/wedoctor/](https://apis.io/providers/wedoctor/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Wedoctor Domain Security](https://apis.io/security/wedoctor/wedoctor-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://wedoctor.com)
+- [Sign up](https://wedoctor.com/register/mobile)
+- [Support](https://wedoctor.com/contact)
+- [Terms of service](https://wedoctor.com/agreement/doctor)
+- [Privacy policy](https://wedoctor.com/agreement/privacy)
+
+## API Evangelist rating
+
+**Kin Score 8.3** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 44.6 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 17.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/wedoctor/](https://apis.io/providers/wedoctor/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for WeDoctor: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/wedoctor/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
